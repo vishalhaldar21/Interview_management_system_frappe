@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "autoname": "format:{candidate_name}-{role_applied}-{interviewer_name}",
+ "creation": "2024-09-23 12:07:23.182870",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "candidate_name",
+  "interviewer_name",
+  "role_applied",
+  "interview_date",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "candidate_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Candidate Name",
+   "options": "Candidate Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "interviewer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Interviewer Name",
+   "options": "Interviewer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "candidate_name.applied_role",
+   "fieldname": "role_applied",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Role applied",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "interview_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Interview Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In progress\nHired\nRejected"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Interview Schedule",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-24 19:20:56.167815",
+ "modified_by": "Administrator",
+ "module": "Interview Management System",
+ "name": "Interview Schedule",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Hired"
+  },
+  {
+   "color": "Red",
+   "title": "Rejected"
+  },
+  {
+   "color": "Yellow",
+   "title": "In progress"
+  }
+ ]
+}

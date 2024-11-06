@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "autoname": "format:{name1}",
+ "creation": "2024-09-23 11:16:56.451652",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "contact",
+  "column_break_cvho",
+  "position",
+  "department",
+  "section_break_vrid",
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Position",
+   "options": "Lead Frontend Developer\nSenior UI/UX Designer\nLead Backend Developer\nSenior DevOps Engineer\nLead Fullstack Developer\nSenior Technical Architect",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "label": "Department",
+   "options": "UI/UX Design Team\nDesign\nBackend Development\nOperations\nDevelopment\nArchitecture",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cvho",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_vrid",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-23 15:02:39.546683",
+ "modified_by": "Administrator",
+ "module": "Interview Management System",
+ "name": "Interviewer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "position"
+}

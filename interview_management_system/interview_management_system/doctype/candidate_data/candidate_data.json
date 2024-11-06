@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "autoname": "format:{name1}",
+ "creation": "2024-09-23 11:00:37.826247",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "experience",
+  "applied_role",
+  "column_break_apgj",
+  "skills"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "description": "Years",
+   "fieldname": "experience",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Experience",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "applied_role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Applied Role",
+   "options": "Frontend Developer\nBackend Developer\nFull Stack Developer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_apgj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Skills",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-23 14:37:08.734474",
+ "modified_by": "Administrator",
+ "module": "Interview Management System",
+ "name": "Candidate Data",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "name1"
+}
